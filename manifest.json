@@ -1,0 +1,23 @@
+{
+  "name": "Conscious Shopping",
+  "description": "Check ingredients of the products",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "pearl.png",
+    "default_popup": "main.html"
+  },
+  "content_scripts": [
+    {
+      "css": ["main.css"],
+      "js": [ "main.js" ],
+      "matches": ["http://*/*", "https://*/*", "file://*"]
+    }
+  ],
+  "icons": {
+    "128": "pearl128.png",
+    "16": "pearl16.png",
+    "48": "pearl48.png"
+  },
+   "permissions": [ "tabs" ]
+}
